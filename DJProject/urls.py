@@ -22,4 +22,5 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^index/$', archive),
     url(r'^login/$', app_login),
+    url(r'^credit/report/$', app_login),
 ]
