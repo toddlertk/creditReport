@@ -17,10 +17,11 @@ from django.conf.urls import url
 from django.contrib import admin
 from app.views import archive
 from app.views import app_login
+from creditReport.views import test_report
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^index/$', archive),
     url(r'^login/$', app_login),
-    url(r'^credit/report/$', app_login),
+    url(r'^credit/report/(\d+)/$', test_report),
 ]
